@@ -72,9 +72,13 @@ nav.appendChild(privacyLink);
 // CTA
 const ctaHeading = document.querySelector('.cta-text h1');
 ctaHeading.innerHTML = siteContent["cta"]["h1"].split(' ').join('<br>');
+ctaHeading.style.color = 'green';
 
 const ctaButton = document.querySelector('.cta-text button');
 ctaButton.textContent = siteContent["cta"]["button"];
+ctaButton.style.background = 'dodgerblue';
+ctaButton.style.color = 'white';
+ctaButton.style.border = '1px solid dodgerblue';
 
 const ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
@@ -113,6 +117,19 @@ visionHeading.textContent = siteContent["main-content"]["vision-h4"];
 const visionContent = document.querySelector('.bottom-content :last-child p');
 visionContent.textContent = siteContent["main-content"]["vision-content"];
 
+const mainHeadings = document.querySelectorAll('h4');
+mainHeadings.forEach(element => element.style.color = 'green');
+
+const mainContent = document.querySelector('.main-content');
+mainContent.style.borderTop = '2px solid dodgerblue';
+mainContent.style.borderBottom = '2px solid dodgerblue';
+
+const topContent = document.querySelector('.top-content');
+topContent.style.background = 'peachpuff';
+
+const bottomContent = document.querySelector('.bottom-content');
+bottomContent.style.background = 'pink'
+
 // Contact
 const contactHeading = document.querySelector('.contact h4');
 contactHeading.textContent = siteContent["contact"]["contact-h4"];
@@ -127,6 +144,14 @@ contactPhone.textContent = siteContent["contact"]["phone"];
 const contactEmail = document.querySelector('.contact :nth-child(4)');
 contactEmail.textContent = siteContent["contact"]["email"];
 
+const contact = document.querySelector('.contact');
+contact.style.background = 'thistle';
+
 // Footer
 const footer = document.querySelector('footer p');
 footer.textContent = siteContent["footer"]["copyright"];
+footer.style.background = 'darkseagreen'
+
+// Paragraph style
+const pText = document.querySelectorAll('p');
+pText.forEach(p => p.style.color = 'midnightblue');

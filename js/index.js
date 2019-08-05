@@ -118,12 +118,13 @@ const contactHeading = document.querySelector('.contact h4');
 contactHeading.textContent = siteContent["contact"]["contact-h4"];
 
 const contactAddress = document.querySelector('.contact :nth-child(2)');
-contactAddress.textContent = siteContent["contact"]["address"];
+const addressText = siteContent["contact"]["address"];
+contactAddress.innerHTML = addressText.slice(0, 18) + '<br>' + addressText.slice(19);
 
 const contactPhone = document.querySelector('.contact :nth-child(3)');
 contactPhone.textContent = siteContent["contact"]["phone"];
 
-const contactEmail = document.querySelector('.contact :last-child');
+const contactEmail = document.querySelector('.contact :nth-child(4)');
 contactEmail.textContent = siteContent["contact"]["email"];
 
 // Footer

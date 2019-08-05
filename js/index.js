@@ -71,7 +71,7 @@ nav.appendChild(privacyLink);
 
 // CTA
 const ctaHeading = document.querySelector('.cta-text h1');
-ctaHeading.textContent = siteContent["cta"]["h1"];
+ctaHeading.innerHTML = siteContent["cta"]["h1"].split(' ').join('<br>');
 
 const ctaButton = document.querySelector('.cta-text button');
 ctaButton.textContent = siteContent["cta"]["button"];

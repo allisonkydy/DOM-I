@@ -60,3 +60,37 @@ ctaButton.textContent = siteContent["cta"]["button"];
 
 const ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+// Main Content
+const featuresHeading = document.querySelector('.top-content :first-child h4');
+featuresHeading.textContent = siteContent["main-content"]["features-h4"];
+
+const featuresContent = document.querySelector('.top-content :first-child p');
+featuresContent.textContent = siteContent["main-content"]["features-content"];
+
+const aboutHeading = document.querySelector('.top-content :last-child h4');
+aboutHeading.textContent = siteContent["main-content"]["about-h4"];
+
+const aboutContent = document.querySelector('.top-content :last-child p');
+aboutContent.textContent = siteContent["main-content"]["about-content"];
+
+const middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+const servicesHeading = document.querySelector('.bottom-content :first-child h4');
+servicesHeading.textContent = siteContent["main-content"]["services-h4"];
+
+const servicesContent = document.querySelector('.bottom-content :first-child p');
+servicesContent.textContent = siteContent["main-content"]["services-content"];
+
+const productHeading = document.querySelector('.bottom-content :nth-child(2) h4');
+productHeading.textContent = siteContent["main-content"]["product-h4"];
+
+const productContent = document.querySelector('.bottom-content :nth-child(2) p');
+productContent.textContent = siteContent["main-content"]["product-content"];
+
+const visionHeading = document.querySelector('.bottom-content :last-child h4');
+visionHeading.textContent = siteContent["main-content"]["vision-h4"];
+
+const visionContent = document.querySelector('.bottom-content :last-child p');
+visionContent.textContent = siteContent["main-content"]["vision-content"];

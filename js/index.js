@@ -107,3 +107,7 @@ contactPhone.textContent = siteContent["contact"]["phone"];
 
 const contactEmail = document.querySelector('.contact :last-child');
 contactEmail.textContent = siteContent["contact"]["email"];
+
+// Footer
+const footer = document.querySelector('footer p');
+footer.textContent = siteContent["footer"]["copyright"];

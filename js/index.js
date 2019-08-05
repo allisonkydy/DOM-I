@@ -83,6 +83,10 @@ ctaButton.style.border = '1px solid dodgerblue';
 const ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
+const cta = document.getElementsByClassName('cta');
+cta[0].style.background = 'paleturquoise';
+console.log(cta);
+
 // Main Content
 const featuresHeading = document.querySelector('.top-content :first-child h4');
 featuresHeading.textContent = siteContent["main-content"]["features-h4"];

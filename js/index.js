@@ -55,6 +55,20 @@ navLinks.forEach(link => {
   link.style.color = 'green';
 });
 
+const nav = document.querySelector('nav');
+
+const homeLink = document.createElement('a');
+homeLink.href = '#';
+homeLink.textContent = "Home";
+homeLink.style.color = 'green';
+nav.prepend(homeLink);
+
+const privacyLink = document.createElement('a');
+privacyLink.href = '#';
+privacyLink.textContent = "Privacy";
+privacyLink.style.color = 'green';
+nav.appendChild(privacyLink);
+
 // CTA
 const ctaHeading = document.querySelector('.cta-text h1');
 ctaHeading.textContent = siteContent["cta"]["h1"];
